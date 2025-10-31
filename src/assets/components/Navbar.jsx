@@ -30,7 +30,7 @@ const Navbar = () => {
 
                 {/* hire me btn */}
                 <motion.div whileTap={{scale: 0.9}} className='md:flex hidden lg-nav-button'>
-                      <a href="#contact" className="px-10 py-2 text-base bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-semibold border-[1px] border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[1px] hover:border-[gray] hover:scale-105 transition-all duration-300">Hire Me</a>
+                      <a href="#contact" className="px-10 py-2 text-base bg-linear-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-semibold border border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border hover:border-[gray] hover:scale-105 transition-all duration-300">Hire Me</a>
                 </motion.div>
 
                 {}{/* hamburger icon */}
@@ -39,7 +39,7 @@ const Navbar = () => {
                 </div>
                 
                 {/* mobile menu */}
-                <div className={isOpen ? "absolute top-0 left-0 w-[100vw] h-screen bg-black/90 flex flex-col justify-center items-center font-light ease-in duration-300 md:hidden" : "absolute top-0 left-[-100%] opacity-0 w-full h-screen bg-black/5 flex flex-col justify-center items-center ease-in duration-300 md:hidden"}>
+                <div className={isOpen ? "absolute top-0 left-0 w-screen h-screen bg-black/90 flex flex-col justify-center items-center font-light ease-in duration-300 md:hidden" : "absolute top-0 -left-full opacity-0 w-full h-screen bg-black/5 flex flex-col justify-center items-center ease-in duration-300 md:hidden"}>
                     <button className='m-8' onClick={handleNav}>
                         <a href="#" className="text-white text-sm hover:text-[gray] transition-all duration-300 ">HOME</a>
                     </button>
@@ -56,7 +56,7 @@ const Navbar = () => {
                         <a href="#contact" className="text-white text-sm hover:text-[gray] transition-all duration-300 ">CONTACT</a>
                     </button>
                     <hr className="border-[gray] w-[80%] m-8"/>
-                    <motion.button whileTap={{scale: 0.9}} className="px-10 py-2 text-base bg-gradient-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-semibold border-[1px] border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border-[1px] hover:border-[gray] hover:scale-105 transition-all duration-300 m-8" onClick={handleNav}>
+                    <motion.button whileTap={{scale: 0.9}} className="px-10 py-2 text-base bg-linear-to-t from-[#a5a9b4] to-[#0a0a0a] text-white font-semibold border border-[gray] rounded-sm flex items-center space-x-2 hover:from-[#0a0a0a00] hover:to-[#a5a9b400] hover:text-[gray] hover:border hover:border-[gray] hover:scale-105 transition-all duration-300 m-8" onClick={handleNav}>
                           <a href="#contact">Hire Me</a>
                     </motion.button>
                 </div>
