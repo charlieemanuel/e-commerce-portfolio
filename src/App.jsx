@@ -1,5 +1,4 @@
-import { main } from 'motion/react-client';
-import Navbar from './assets/components/index';
+import { Navbar } from './assets/components/index.js';
 
 function App() {
 
